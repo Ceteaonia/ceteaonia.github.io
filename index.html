@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* 调整全局文字颜色 */
+        }
+        .container {
+            margin: 10% auto;
+            max-width: 600px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 24px;
+        }
+        .contact-info {
+            margin-top: 40px;
+        }
+        .contact-info p {
+            font-size: 16px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #a3b8cd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ceteaonia网站暂停运营公告</h1>
+        <p>由于站长个人学业与创作、社交、维护本网站的时间相冲突，并无多余时间精力来维护网站。故暂时关停网站。</p>
+
+        <hr>
+
+        <div class="contact-info">
+            <p>你可以通过以下方式联系站长：</p>
+            <p>Email: <a href="yukari2020@outlook.com"><b>Yukari2020@outlook.com</b></a></p>
+            <p>Cbox: <a href="https://www3.cbox.ws/box/?boxid=3517351&boxtag=nSy1yV"><b>Ceteaonia聊天室</b></a></p>
+        </div>
+        <br>
+        <hr>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <script>
+        // 设置目标日期和时间
+        var targetDate = new Date("2024-06-09T12:00:00").getTime();
+
+        // 更新倒计时
+        var countdownElement = document.getElementById("countdown");
+        var countdownInterval = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = targetDate - now;
+
+            // 计算剩余的天、小时、分钟和秒数
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // 显示倒计时
+            countdownElement.innerHTML = "网站恢复运营倒计时：" + days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+        }, 1000);
+    </script>
+</body>
+</html>
