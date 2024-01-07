@@ -53,40 +53,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Ceteaonia网站暂停运营公告</h1>
-        <p>由于站长个人学业与创作、社交、维护本网站的时间相冲突，并无多余时间精力来维护网站。故暂时关停网站。</p>
-
-        <hr>
-
-        <div class="contact-info">
-            <p>你可以通过以下方式联系站长：</p>
-            <p>Email: <a href="yukari2020@outlook.com"><b>Yukari2020@outlook.com</b></a></p>
-            <p>Cbox: <a href="https://www3.cbox.ws/box/?boxid=3517351&boxtag=nSy1yV"><b>Ceteaonia聊天室</b></a></p>
-        </div>
-        <br>
-        <hr>
-        <div class="countdown" id="countdown"></div>
+        <h1>Ceteaonia网站永久停运公告</h1>
+        <p>Ceteaonia网站于北京时间2024年01月07日永久关停。设定集暂时封存，感谢陪伴。相关授权作者就版权事宜需讨论请于邮箱联系。</p>
     </div>
-
-    <script>
-        // 设置目标日期和时间
-        var targetDate = new Date("2024-06-09T12:00:00").getTime();
-
-        // 更新倒计时
-        var countdownElement = document.getElementById("countdown");
-        var countdownInterval = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = targetDate - now;
-
-            // 计算剩余的天、小时、分钟和秒数
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // 显示倒计时
-            countdownElement.innerHTML = "网站恢复运营倒计时：" + days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
-        }, 1000);
-    </script>
 </body>
 </html>
